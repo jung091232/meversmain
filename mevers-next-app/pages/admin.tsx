@@ -7,7 +7,7 @@ import { formatUnits } from "viem";
 
 export default function AdminPage() {
   const { address, isConnected } = useAccount();
-  const { connect, isPending: isConnecting } = useConnect({ connector: injected() });
+  const { connectors, connect, isPending } = useConnect();
   const { disconnect } = useDisconnect();
   const { data: overview, isLoading, error } = useSystemOverview();
 
@@ -31,8 +31,8 @@ export default function AdminPage() {
                   <button onClick={() => disconnect()}>Disconnect</button>
                 </>
               ) : (
-                <button onClick={() => connect()}>
-                  {isConnecting ? "Connecting..." : "Connect Wallet"}
+                <button onClick={() => connect({ connector: connectors[0] })}>
+                  {isPending ? "Connecting..." : "Connect Wallet"}
                 </button>
               )}
             </div>
