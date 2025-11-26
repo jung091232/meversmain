@@ -1,0 +1,10 @@
+/* A: Cleaned legacy Mevers theme */
+body { margin:0; background:#050509; color:#f5f5f7; font-family:Arial, sans-serif; }
+.mvs-header{padding:16px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1f2937;background:#111827;}
+.mvs-nav a{color:#9ca3af;margin:0 8px;text-decoration:none;}
+.mvs-nav a:hover{color:#fff;}
+.mvs-main{padding:32px;}
+.panel{background:#0a0a12;border:1px solid #1f2937;border-radius:16px;padding:24px;margin-bottom:24px;}
+.card{background:#111827;border:1px solid #1f2937;padding:16px;border-radius:16px;margin-bottom:16px;}
+.btn-primary{background:#2563eb;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;}
+.btn-secondary{background:#333;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;}
